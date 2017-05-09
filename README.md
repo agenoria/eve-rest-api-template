@@ -8,5 +8,18 @@ The setup for the API itself is based on the [Eve quickstart](http://python-eve.
 
 Once you have the API up and running, here are some helpful queries:
 
-- `curl http://127.0.0.1:5000/people`
-- ` curl -d '[{"firstname": "bugs", "lastname": "bunny"}, {"firstname": "robrigo", "lastname": "soler"}]' -H 'Content-Type: application/json'  http://127.0.0.1:5000/people`
+GET:
+
+`curl http://127.0.0.1:5000/people`
+
+POST:
+
+`curl -d '[{"firstname": "bugs", "lastname": "bunny"}, {"firstname": "robrigo", "lastname": "soler"}]' -H 'Content-Type: application/json'  http://127.0.0.1:5000/people`
+
+DELETE:
+
+`curl -X DELETE -H 'If-Match: <etag of entity>' http://127.0.0.1:5000/people/<id of entity>`
+
+PUT:
+
+`curl -X PUT -d '{"firstname": "b", "lastname": "bunny"}' -H 'Content-Type: application/json' -H 'If-Match: <etag of entity>'  http://127.0.0.1:5000/people/<id of entity>`
