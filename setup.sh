@@ -17,7 +17,7 @@ cd foundation-rest-api-framework;
 vi ~/.bashrc;
 # paste the following into .bashrc: export LC_ALL=C
 
-# run mongo
+# run mongo using small files and as a daemon (--fork)
 mkdir logs/ && vi logs/mongo_log.log;
 mongod --dbpath . --smallfiles --port 27018 --fork --logpath ./logs/;
 
