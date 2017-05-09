@@ -83,5 +83,7 @@ MONGO_PORT = 27018
 MONGO_DBNAME = 'data'
 
 # set rate limiting (this uses Redis)
+# this limits GET requests to 1 every 30 seconds
 RATE_LIMIT_GET = (1, 30)
+# this limits POST requests to 1 every 30 seconds
 RATE_LIMIT_POST = (1, 30)
