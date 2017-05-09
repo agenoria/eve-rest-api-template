@@ -10,8 +10,8 @@ sudo pip install eve
 sudo pip install redis
 
 # clone rest API foundation
-git clone <python api template repo>;
-cd <python api template repo>;
+git clone https://github.com/agenoria/foundation-rest-api-framework.git;
+cd foundation-rest-api-framework;
 
 # minor bug fix for systems set to local locale
 vi ~/.bashrc;
