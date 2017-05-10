@@ -19,7 +19,7 @@ vi ~/.bashrc;
 
 # run mongo using small files and as a daemon (--fork)
 mkdir logs/ && vi logs/mongo_log.log;
-mongod --dbpath . --smallfiles --port 27018 --fork --logpath ./logs/;
+mongod --dbpath . --smallfiles --port 27018 --fork --logpath ./logs/mongo_log.log;
 
 # run redis
 redis-server;
