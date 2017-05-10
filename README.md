@@ -18,8 +18,8 @@ POST:
 
 DELETE:
 
-`curl -X DELETE -H 'If-Match: <etag of entity>' http://127.0.0.1:5000/people/<id of entity>`
+`curl -X DELETE -H 'If-Match: <etag_of_entity>' http://127.0.0.1:5000/people/<id_of_entity>`
 
 PUT:
 
-`curl -X PUT -d '{"firstname": "b", "lastname": "bunny"}' -H 'Content-Type: application/json' -H 'If-Match: <etag of entity>'  http://127.0.0.1:5000/people/<id of entity>`
+`curl -X PUT -d '{"firstname": "b", "lastname": "bunny"}' -H 'Content-Type: application/json' -H 'If-Match: <etag_of_entity>'  http://127.0.0.1:5000/people/<id_of_entity>`
