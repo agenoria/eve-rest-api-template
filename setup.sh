@@ -26,3 +26,6 @@ redis-server;
 
 # start the API
 python run.py
+
+# you can stop mongo with:
+#  mongod --shutdown --dbpath .
