@@ -87,3 +87,7 @@ MONGO_DBNAME = 'data'
 RATE_LIMIT_GET = (1, 30)
 # this limits POST requests to 1 every 30 seconds
 RATE_LIMIT_POST = (1, 30)
+
+# For better or for worse, these headers will open the API up to pretty much anyone on the internet
+X_DOMAINS = '*'
+X_HEADERS = ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'If-Match']
