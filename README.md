@@ -1,4 +1,4 @@
-# Foundation for Python API's Using Eve
+# Template for a simple API using Python Eve
 
 This is a simple foundation for building API's using [Eve](http://python-eve.org/).
 
