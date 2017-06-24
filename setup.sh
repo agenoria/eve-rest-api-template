@@ -1,13 +1,22 @@
 # standard updates
-sudo apt-get update && apt-get upgrade
+sudo apt-get update && apt-get -y upgrade
 
 # install packages
-sudo apt-get install mongodb-server
-sudo apt-get install redis-server
+sudo apt-get -y install mongodb-server
+sudo apt-get -y install redis-server
+
+# install python pip
+sudo apt-get -y install python3-pip
+
+# for those of us en un pais exotico
+export LC_ALL=C
+
+# update pip
+pip3 install --upgrade pip
 
 # install python packages
-sudo pip install eve
-sudo pip install redis
+sudo pip3 install eve # sudo pip install eve
+sudo pip3 install redis # sudo pip install redis
 
 # clone rest API foundation
 git clone https://github.com/agenoria/eve-rest-api-template.git;
